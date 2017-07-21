@@ -1,0 +1,129 @@
+.container-fluid {
+    padding-right: 30px;
+}
+header {
+    padding-top: 100px;
+}
+table {
+    border-collapse: separate;
+}
+th:first-child,td:first-child {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+th:last-child,td:last-child {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+.tb .input-group {
+    width: 90px;
+    display: none;
+    margin: 0 auto;
+}
+.tb {
+    position: relative;
+}
+th,td {
+    text-align: center;
+}
+th {
+    vertical-align: middle !important;
+    width: 100px;
+}
+.delete {
+    display: none;
+    opacity: .5;
+    color: red;
+}
+.delete:hover {
+    opacity: 1;
+}
+tr:hover .delete {
+    display: inline;
+}
+.add {
+    width: 300px;
+    height: 250px;
+    border: 1px solid lightgray;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: white;
+    display: none;
+    -webkit-box-shadow: 2px 2px 2px rgba(190,190,190,0.5);
+    -moz-box-shadow: 2px 2px 2px rgba(190,190,190,0.5);
+    box-shadow: 2px 2px 2px rgba(190,190,190,0.5);
+}
+.add .form-control {
+    border: none;
+    background: rgba(190,190,190,0.1);
+    -webkit-box-shadow: inset 1px 1px 1px rgba(190,190,190,0.5);
+    -moz-box-shadow: inset 1px 1px 1px rgba(190,190,190,0.5);
+    box-shadow: inset 1px 1px 1px rgba(190,190,190,0.5);
+}
+.add-content {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+}
+.add-content .btn {
+    -webkit-box-shadow: 3px 3px 3px rgba(190,190,190,1);
+    -moz-box-shadow: 3px 3px 3px rgba(190,190,190,1);
+    box-shadow: 3px 3px 3px rgba(190,190,190,1);
+}
+.add .alert {
+    margin-top: 10px;
+    display: none;
+    padding: 5px;
+}
+.signup,.signin {
+    width: 350px;
+    position: absolute;
+    display: none;
+}
+.signup .alert {
+    display: none;
+}
+.signup-close,.signin-close {
+    position: absolute;
+    right: 15px;
+    top: 10px;
+    color: red;
+    opacity: .5;
+}
+.signup-close:hover,.signin-close:hover {
+    opacity: .8;
+}
+.signin .alert {
+    display: none;
+}
+.signin a {
+    position: absolute;
+    bottom: 20px;
+    left: 15px;
+}
+.user-name {
+    display: none;
+}
+.kq {
+    display: none;
+}
+.kq .col-lg-2 {
+    height: 40px;
+    border: 1px solid darkgrey;
+    border-radius: 8px;
+}
+.next-month,.qd-btn {
+    margin-left: 100px;
+}
+.wrap {
+    margin: 20px auto;
+}
+.late {
+    background: pink;
+}
+.ipt,.out,.glyphicon-remove {
+    cursor: pointer;
+}

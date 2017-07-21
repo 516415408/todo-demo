@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>DEMO</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/demo.css">
+    <script src="js/jQuery-1.12.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <script src="js/store+json2.min.js"></script>
+    <script src="js/demo.js"></script>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">DEMO</a>
+                </div>
+                    <ul class="nav navbar-nav tab">
+                        <li class="active"><a href="#" data-toggle="tab">库存</a></li>
+                        <li><a href="#" data-toggle="tab">考勤</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right login-register">
+                        <li class="login"><a href="#"><span class="glyphicon glyphicon-user"></span> 登录</a></li>
+                        <li><button class="btn navbar-btn btn-primary register">注册</button></li>
+                    </ul>
+                    <div class="dropdown pull-right navbar-text user-name">
+                            <span>userName</span>
+                            <span class="caret dropdown-toggle" data-toggle="dropdown"></span>
+                        <ul class="dropdown-menu">
+                            <li class="signout"><a href="#">退出</a></li>
+                        </ul>
+                    </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container tb">
+        <div class="row">
+            <table class="table table-striped">
+                <tr class="info">
+                    <th>产品</th>
+                    <th>入库</th>
+                    <th>出库</th>
+                    <th>库存</th>
+                    <th><button class="btn btn-primary add-btn">添加产品</button></th>
+                </tr>
+            </table>
+        </div>
+        <div class="add">
+            <form>
+                <div>
+                    <label>型号</label>
+                    <input type="text" class="form-control t1" value="">
+                    <label>库存</label>
+                    <input type="text" class="form-control t2" value="">
+                </div>
+                <div class="add-content">
+                    <input type="button" class="btn btn-danger btn-sm cancel" value="取消">
+                    <input type="button" class="btn btn-success btn-sm sure" value="确定">
+                </div>
+                <div class="alert"></div>
+            </form>
+        </div>
+    </div>
+    <div class="signup panel panel-success">
+        <span class="glyphicon glyphicon-remove signup-close"></span>
+        <div class="panel-heading">注册</div>
+        <div class="panel-body">
+            <div class="form-group">
+                <label>用户名：</label>
+                <input type="text" class="form-control" placeholder="请输入用户名" value="">
+                <label>密码：</label>
+                <input type="password" class="form-control" placeholder="请输入密码" value="">
+            </div>
+            <div class="alert alert-danger"></div>
+            <input type="button" value="注册" class="btn btn-success pull-right register-btn">
+        </div>
+    </div>
+    <div class="signin panel panel-primary">
+        <span class="glyphicon glyphicon-remove signin-close"></span>
+        <div class="panel-heading">登录</div>
+        <div class="panel-body ">
+            <form class="form-group">
+                <label>用户名：</label>
+                <input type="text" class="form-control" value="" placeholder="请输入用户名">
+                <label>密码：</label>
+                <input type="password" class="form-control" value="" placeholder="请输入密码">
+            </form>
+            <div class="alert"></div>
+            <div class="signin-div pull-right">
+                <a class="forget" href="javascript:;">忘记密码？<span class="glyphicon glyphicon-hand-up"></span></a>
+                <input type="button" class="btn btn-danger login-cancel" value="取消">
+                <input type="button" class="btn btn-primary login-confirm" value="登录">
+            </div>
+        </div>
+    </div>
+    <div class="kq">
+        <button class="btn btn-primary qd-btn">签到</button>
+        <button class="btn btn-success next-month">下一个月</button>
+    </div>
+</body>
+</html>
